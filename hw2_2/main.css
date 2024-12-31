@@ -1,0 +1,19 @@
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50vw;
+}
+
+.box_hover{
+    width: 150px;
+    height: 150px;
+    background: red;
+    transition: 0.8s;
+}
+
+.box_hover:hover{
+    background: darkgray;
+    border-radius: 50%;
+}
