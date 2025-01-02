@@ -27,7 +27,14 @@ body{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+.month:hover {
+    transform: scale(1.1);
+
+}
+
 
 .title {
     font-weight: bold;
