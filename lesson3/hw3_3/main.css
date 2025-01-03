@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+}
+
+#section_header {
+    background: #4b76d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#section_content {
+    background: #1b4aa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#section_footer {
+    background: #4f82f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+a{
+    font-size: 4em;
+}

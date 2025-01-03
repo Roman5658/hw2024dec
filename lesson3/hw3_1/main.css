@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    background: #4f82f1;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 15px;
+}
+
+.widgets {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1b4aa1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4b76d3;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 15px;
+}
+
+p{
+    color: #f1f0f0;
+    font-size: 35px;
+}
