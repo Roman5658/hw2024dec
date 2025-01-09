@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header, footer{
+    width: 1728px;
+    height: 244px;
+    background: #D9D9D9;
+}
+
+div{
+    width: 1728px;
+    height: 629px;
+    background: #A4A4A4;
+}
+

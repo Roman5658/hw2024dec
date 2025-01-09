@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cute Cat Animation</title>
+    <style>
+        @keyframes cat {
+            0% {
+                transform: translateX(300px);
+            }
+            40% {
+                transform: translateX(0);
+            }
+            60% {
+                transform: translateX(0) rotate(0deg);
+            }
+            100% {
+                transform: translateX(300px) rotate(180deg);
+            }
+        }
+
+        body {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+            overflow: hidden;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: 3px solid #fff;
+            animation: cat 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+<img src="../images/cat1.png" alt="cat">
+</body>
+</html>
