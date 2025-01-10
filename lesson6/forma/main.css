@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.window {
+    width: 100vw;
+    height: 100vh;
+    background: #4f82f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.content {
+    width: 40vw;
+    height: 50vh;
+    background: #ebf1eb;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 15px 12px 40px rgba(0, 0, 0, 1.0);
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    background: #cbcfcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+
+}
+
+.registration {
+
+    width: 100%;
+    height: 60%;
+    background: #f4f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    overflow: hidden;
+
+
+}
+
+input[type="text"],
+input[type="password"]{
+
+    width: 70%;
+    margin: 10px auto 10px auto;
+    height: 50px;
+    font-size: 20px;
+    background: #bffbbf;
+    border-radius: 15px;
+
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 10%;
+    margin: 15px auto 0 auto;
+
+
+}
+
+.submit-btn{
+
+    border-radius: 15px;
+    width: 80px;
+    height: 35px;
+    background: #b6efb6
+
+
+}
+
+.submit-btn:hover{
+    background: #adaeb1;
+}
+
+.remember-label {
+    font-size: 20px;
+    color: #333;
+}
+
+
+

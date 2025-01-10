@@ -1,0 +1,24 @@
+body>div.list1>ul>li:nth-child(2n){
+    color: #f84a50;
+    font-size: 20px;
+}
+
+body>div.list2>ul>li:nth-child(2n+1){
+    font-size: 22px;
+}
+
+body>div.list3>ul>li:nth-child(2n+4)::after{
+    content: "!";
+}
+
+body>div.list4>ul>li:last-child{
+    color: violet;
+
+}
+
+body>div.list5>ul>li:first-letter{
+    font-size: 30px;
+    color: red;
+
+}
+
