@@ -5,6 +5,10 @@
     list-style: none;
 
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 body {
     background: #071341;

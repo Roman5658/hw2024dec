@@ -1,0 +1,15 @@
+@media screen and (max-width: 440px) {
+   main{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+   }
+    img{
+        width: 128px;
+        height: 128px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+
+}

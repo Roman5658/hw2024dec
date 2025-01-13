@@ -1,0 +1,20 @@
+@media screen and (min-width: 440px) and (max-width: 768px) {
+main{
+        display: flex;
+        width: 768px;
+        margin: 0 auto;
+        padding: 48px 24px;
+        justify-content: space-between;
+       flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        background:  #F3F5F6;
+
+}
+
+    .content {
+        width: calc(50% - 24px);
+    }
+
+
+}
