@@ -1,0 +1,23 @@
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 768px;
+
+        flex-wrap: wrap;
+
+        padding: 48px 24px;
+
+
+        gap: 40px;
+    }
+
+    .content {
+        margin: 0 12px 0 12px;
+
+    }
+
+}
+
