@@ -1,5 +1,11 @@
-@media screen and (min-width: 440px) and (max-width: 768px) {
-main{
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main{
         display: flex;
         width: 768px;
         margin: 0 auto;
@@ -9,6 +15,18 @@ main{
         align-items: center;
         gap: 24px;
         background:  #F3F5F6;
+
+        .content:last-child,
+        .content:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            max-width: 160px;
+        }
+
 
 }
 

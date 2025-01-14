@@ -1,4 +1,4 @@
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 375px) {
     main{
         display: flex;
         width: 375px;
@@ -11,13 +11,11 @@
         align-self: stretch;
         color:  #3C3C43;
         text-align: center;
-
-        /* Capital/1 strong */
         font-family: 'Inter', sans-serif;
         font-size: 13px;
         font-style: normal;
         font-weight: 700;
-        line-height: 120%; /* 15.6px */
+        line-height: 120%;
         letter-spacing: 1.5px;
         text-transform: uppercase;
     }
