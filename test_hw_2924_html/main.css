@@ -4,6 +4,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 main {
@@ -32,6 +33,7 @@ header {
     width: 194px;
     height: 45px;
     margin: 26px 0 15px 95px;
+    cursor:pointer;
 }
 
 .blog p:nth-child(1) {
@@ -67,7 +69,7 @@ ul {
 }
 
 ul > li > a {
-    color: #2B2C34;
+
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -76,6 +78,8 @@ ul > li > a {
     text-transform: capitalize;
     width: 100%;
     height: 100%;
+    color: #2B2C34;
+
 }
 
 main > header > ul > li:nth-child(5) {
@@ -85,7 +89,9 @@ main > header > ul > li:nth-child(5) {
     gap: 10px;
     border-radius: 4px;
     background: #6246EA;
+    cursor:pointer;
 }
+
 
 
 /*--------------------section------------------*/
@@ -156,6 +162,7 @@ main > section.frame > div.content > form {
     font-weight: 400;
     line-height: normal;
     opacity: 0.6;
+    width: 444px;
 }
 
 .button_form {
@@ -176,6 +183,7 @@ main > section.frame > div.content > form {
     line-height: normal;
     text-transform: capitalize;
     cursor: pointer;
+    width: 145px;
 }
 
 main > section.form > img {
@@ -376,8 +384,11 @@ main > section.frame_develop > div.wrapper_card_develop > div.title_link > p.see
     align-items: center;
     border-radius: 12px;
     background: #FFFFFE;
-    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 
+
+}
+.card:hover{
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
 div.card > img {
@@ -544,6 +555,7 @@ div.name_and_link > p.category_link > svg {
     border-radius: 8px;
     background: #6246EA;
     border: none;
+    cursor:pointer;
 }
 
 /*subscribe section-----------------------------------*/
@@ -576,6 +588,7 @@ div.name_and_link > p.category_link > svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 23px 24px 0 25px;
 }
 
 .title_form {
@@ -638,6 +651,7 @@ div.name_and_link > p.category_link > svg {
     text-transform: capitalize;
     border-radius: 8px;
     background: #6246EA;
+    cursor: pointer;
 }
 
 /*footer-------------------------------------------------*/
@@ -699,6 +713,7 @@ footer {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
 }
 
 .dasten_link {
@@ -710,6 +725,7 @@ footer {
     font-weight: 700;
     line-height: normal;
     color: #6246EA;
+    cursor: pointer;
 ;
 }
 
@@ -730,12 +746,22 @@ footer {
     flex-direction: column;
     display: flex;
     gap: 25px;
+
 }
 .paragraph_info{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 155px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #2B2C34;
+
 }
+
+
 .title_list{
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
