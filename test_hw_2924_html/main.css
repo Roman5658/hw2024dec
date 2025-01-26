@@ -632,6 +632,7 @@ div.name_and_link > p.category_link > svg {
     border: none;
     border-radius: 8px;
     background: #FFFFFE;
+    width: 444px;
 }
 
 .button_form_subscribe {
@@ -652,6 +653,7 @@ div.name_and_link > p.category_link > svg {
     border-radius: 8px;
     background: #6246EA;
     cursor: pointer;
+    width: 145px;
 }
 
 /*footer-------------------------------------------------*/
