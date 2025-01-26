@@ -737,10 +737,11 @@ footer {
 }
 
 .dasten_content{
-    display: flex;
+    display: grid;
     gap: 95px;
     width: 805px;
     height: 245px;
+    grid-template-columns: repeat(4,1fr);
 }
 .contact{
     width: 129px;
