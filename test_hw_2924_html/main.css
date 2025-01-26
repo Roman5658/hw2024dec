@@ -360,7 +360,6 @@ main > section.frame_develop > div.wrapper_card_develop > div.title_link > p.see
 .featured {
     display: flex;
     width: 1252px;
-    height: 490px;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
@@ -396,6 +395,11 @@ div.card > h3 {
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .dasten {
@@ -705,6 +709,8 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    color: #6246EA;
+;
 }
 
 .dasten_blog_info {
