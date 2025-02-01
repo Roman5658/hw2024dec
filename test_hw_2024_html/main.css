@@ -8,12 +8,14 @@
 }
 
 main {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 86px;
     background: #EFF0F3;
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
@@ -33,7 +35,7 @@ header {
     width: 194px;
     height: 45px;
     margin: 26px 0 15px 95px;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .blog p:nth-child(1) {
@@ -69,48 +71,42 @@ ul {
 }
 
 ul > li > a {
-
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
-    width: 100%;
-    height: 100%;
     color: #2B2C34;
-
 }
-
-main > header > ul > li:nth-child(5) {
+main > header > ul > li > a > span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main > header > ul > li:nth-last-child(1) {
     display: flex;
     padding: 10px 17px;
     align-items: flex-start;
-    gap: 10px;
     border-radius: 4px;
     background: #6246EA;
-    cursor: pointer;
+    cursor:pointer;
 }
-
-main > header > ul > li:nth-child(5) a {
-    color: white;
+main > header > ul > li:nth-last-child(1) a {
+    color: #ffffff;
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
-
 
 /*--------------------section------------------*/
 
 .frame {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 900px;
     background: #EFF0F3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .content {
@@ -161,7 +157,7 @@ main > section.frame > div.content > form {
     border-radius: 8px;
     border: none;
     background: #FFFFFE;
-    color: #C0C0C0;
+    color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -173,7 +169,7 @@ main > section.frame > div.content > form {
 
 .button_form {
     display: flex;
-    padding: 20px 23px 19px 23px;
+    padding: 21px 23px 21px 23px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -189,7 +185,6 @@ main > section.frame > div.content > form {
     text-transform: capitalize;
     cursor: pointer;
     width: 145px;
-
 }
 
 main > section.form > img {
@@ -203,28 +198,20 @@ main > section.form > img {
 main > section.frame > img {
     margin-right: 94px;
 }
+.inner {
+    max-width: 1252px;
+    width: 100%;
+}
 
 /*<!-------    section developmens   ------------------------>*/
+/* height 500 to achieve , gap 50 between title */
 .frame_develop {
-    width: 1440px;
-    height: 500px;
     background: #EFF0F3;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin: 0 auto;
-    gap: 50px;
-    justify-content: center;
-
-}
-
-.wrapper_card_develop {
-    display: flex;
-    width: 1252px;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin: 0 auto;
+    padding-top: 67px;
+    justify-content: center;
 
 }
 
@@ -232,18 +219,19 @@ main > section.frame > img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-
+    margin-bottom: 50px;
 }
-
-.mobile_develop {
-    color: #2B2C34;
-    font-family: "Plus Jakarta Sans", sans-serif;
+.title_link p {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 35px;
     text-transform: capitalize;
+}
+.mobile_develop {
+    color: #2B2C34;
+
+
 }
 
 .see_all {
@@ -263,102 +251,45 @@ main > section.frame_develop > div.wrapper_card_develop > div.title_link > p.see
 
 .card_develop {
     display: flex;
-    align-items: flex-start;
     gap: 37px;
-    width: 1248px;
-    height: 280px;
-    margin: 0 auto 68px auto;
-
+    margin-bottom: 68px;
 }
 
 .category_card {
-    width: 220px;
-    height: 280px;
+    color: #232323;
     border-radius: 8px;
     background: #FFFFFE;
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
-    color: #232323;
-    font-family: "Plus Jakarta Sans", serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
     transition: 2s;
+    width: 220px;
+    height: 280px;
 
 }
-
+.category_card svg {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.458px;
+    margin-bottom: 30px;
+    background: #FFFFFE;
+}
+.category_card .card {
+    margin: 65px 30px 0;
+}
 .category_card:hover {
     background-color: #6246EA;
     color: #FFFFFE;
     transition: 2s;
-}
-
-
-.card_css {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 65px 130px 95px 30px;
-}
-
-.card_js {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 65px 72px 95px 30px;
-}
-
-.tailwind {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 65px 72px 95px 30px;
-}
-
-.svg_tailwind {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 7.458px;
-
-}
-
-.vue_js {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 65px 115px 95px 30px;
-}
-
-.svg_vue, .svg_css, .svg_react {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7.458px;
-    background: #FFFFFE;
-}
-
-.react {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 65px 92px 95px 30px;
 }
 
 .featured_article {
@@ -367,37 +298,20 @@ main > section.frame_develop > div.wrapper_card_develop > div.title_link > p.see
     justify-content: flex-end;
     align-items: center;
     gap: 80px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 80px auto 80px auto;
 }
 
 .featured {
     display: flex;
     width: 1252px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-
+    justify-content: space-between;
 }
 
-.card {
-    display: flex;
-    width: 300px;
-    height: 425px;
+div.card {
     padding: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    background: #FFFFFE;
-
-
 }
-
-.card:hover {
-    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
-}
-
 div.card > img {
     width: 260px;
     height: 198px;
@@ -414,14 +328,23 @@ div.card > h3 {
     line-height: normal;
     text-transform: capitalize;
 }
-
-.wrapper {
+.wrapper{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    width: 1252px;
 }
 
+.name_and_link {
+    display: flex;
+    height: 35px;
+    padding: 2px 0 3px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
 .dasten {
+    padding-left: 2px;
+    padding-right: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -441,15 +364,7 @@ div.featured > div.card > div.dasten > div {
 
 }
 
-.name_and_link {
-    display: flex;
-    width: 1252px;
-    height: 35px;
-    padding: 2px 0 3px 0;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-}
+
 
 .text_article {
     color: #2B2C34;
@@ -563,21 +478,18 @@ div.name_and_link > p.category_link > svg {
     border-radius: 8px;
     background: #6246EA;
     border: none;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 /*subscribe section-----------------------------------*/
 .subscribe_section {
     display: inline-flex;
-    padding: 58px 372px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
     background: #EFF0F3;
-
+    width: 100%;
 }
 
 .form_section {
+    margin: 58px auto;
     width: 696px;
     height: 337px;
     background: #EFF0F3;
@@ -643,26 +555,6 @@ div.name_and_link > p.category_link > svg {
     width: 444px;
 }
 
-.button_form_subscribe {
-    display: flex;
-    height: 67px;
-    padding: 20px 23px 19px 23px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    color: #FFFFFE;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-    border-radius: 8px;
-    background: #6246EA;
-    cursor: pointer;
-    width: 145px;
-}
 
 /*footer-------------------------------------------------*/
 footer {
@@ -679,11 +571,10 @@ footer {
 .section_footer {
     width: 1249px;
     height: 245px;
-    margin: 70px 96px 50px 95px;
+    margin: 70px auto 50px auto;
     display: flex;
     gap: 160px;
     justify-content: space-between;
-
 }
 
 .info {
@@ -735,7 +626,7 @@ footer {
     font-weight: 700;
     line-height: normal;
     color: #6246EA;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .dasten_blog_info {
@@ -744,23 +635,16 @@ footer {
 }
 
 .dasten_content {
-    display: grid;
-    gap: 95px;
-    width: 805px;
-    height: 245px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-
 .contact {
-    width: 129px;
     height: 245px;
     flex-direction: column;
     display: flex;
-    gap: 25px;
-
 }
-
-.paragraph_info {
+.paragraph_info{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -770,11 +654,10 @@ footer {
     font-weight: 400;
     line-height: normal;
     color: #2B2C34;
-
 }
 
 
-.title_list {
+.title_list{
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
@@ -782,10 +665,10 @@ footer {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    width: 159px;
+    margin-bottom: 25px;
 }
 
-.paragraph_info {
+.paragraph_info{
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
