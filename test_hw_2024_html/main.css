@@ -561,29 +561,30 @@ footer {
     width: 1440px;
     height: 435px;
     background: #E4E5E9;
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
+
 }
 
 .section_footer {
     width: 1249px;
     height: 245px;
     margin: 70px auto 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
     gap: 160px;
+    justify-content: space-between;
 }
 
 .info {
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 14px;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 26px 0 26px 95px;
-    text-align: center;
 }
 
 .line_footer {
@@ -594,67 +595,88 @@ footer {
 }
 
 .svg_for_dasten {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 30px;
     align-items: center;
 }
 
 .dasten_info {
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
+    width: 384px;
 }
 
 .dasten_text {
     color: #001858;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 36px;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal;
     cursor: pointer;
 }
 
 .dasten_link {
+    width: 47px;
+    height: 27px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
     color: #6246EA;
     cursor: pointer;
 }
 
 .dasten_blog_info {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: end;
+    display: flex;
+    align-items: flex-end;
 }
 
 .dasten_content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
-
 .contact {
-    display: grid;
-    grid-template-rows: auto 1fr;
     height: 245px;
+    flex-direction: column;
+    display: flex;
 }
-
-.paragraph_info {
-    display: grid;
+.paragraph_info{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     width: 155px;
     font-size: 18px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
     color: #2B2C34;
 }
 
-.title_list {
+
+.title_list{
     color: #2B2C34;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 20px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 25px;
+}
+
+.paragraph_info{
+    color: #2B2C34;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
